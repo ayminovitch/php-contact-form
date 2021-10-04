@@ -1,5 +1,5 @@
-#VALID TEST JOB 
-####HAMMAMI AYMEN
+# VALID TEST JOB 
+#### HAMMAMI AYMEN
 How to run Contact form with mail function and Storing data in the database using PHP and MySQL
 
 1. Download the the zip file.
