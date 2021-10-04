@@ -1,0 +1,200 @@
+*{
+  font-family: 'Cairo';
+}
+a:visited{
+  color: #FFF;
+}
+html{
+  font-size: 16px;
+}
+@media only screen and (max-width: 768px){
+  html{
+    font-size: 12px;
+  }
+}
+
+/*==================================
+~ ~ ~ ~ ~ ~ Header Styling ~ ~ ~ ~ ~
+====================================*/
+header{
+  background: linear-gradient(rgba(0 ,0 ,0, 0.6), rgba(0 ,0 ,0, 0.8)), url('../images/contact1.jpg');
+  background-size: cover;
+  height: 90vh;
+  position: relative;
+}
+header .intro{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #FFF;
+  text-shadow: 5px 5px 6px #000;
+}
+header .intro p:first-of-type{
+  letter-spacing: 6px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-weight: bold;
+}
+header .intro h1{
+  font-weight: bold;
+  font-size: 4.5rem;
+  font-family: 'Chicle';
+  letter-spacing: 6px;
+  white-space: nowrap;
+}
+header .intro p:last-of-type{
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+header a{
+  font-size: 1.6rem;
+  position: absolute;
+  display: block;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none !important;
+  color: #FFF;
+  background: #000;
+  text-align: center;
+  border-radius: 50%;
+  min-width: 1.5em;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  animation: MoveUpDown 1s linear infinite;
+  transition: all 0.3s;
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 10px;
+  }
+  50% {
+    bottom: 20px;
+  }
+}
+header a:after {
+  content: '';
+  padding-top: 100%;
+  display:table;
+}
+header a:hover{
+  background: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/*==================================
+~ ~ Informations Section Styling ~ ~
+====================================*/
+section.info{
+  padding: 40px 0;
+  background: #EEE;
+}
+section.info h3{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+section.info p a{
+  text-decoration: none;
+  color: #000;
+  transition: all 0.4s ease-out;
+}
+section.info p a:hover{
+  text-decoration: none;
+  color: #b7337a;
+  font-weight: bold;
+}
+
+/*==================================
+~ ~ Contact Form Section Styling ~ ~
+====================================*/
+section.contact{
+  padding: 80px 0;
+}
+section.contact .page-header{
+  letter-spacing: 6px;
+  font-family: 'Chicle';
+  margin-bottom: 45px;
+  white-space: nowrap;
+  font-family: 2rem;
+}
+section.contact form input, textarea{
+  display: block;
+  width: 100%;
+  padding: 9px 15px;
+  margin-top: 10px;
+  border: 1px solid #CCC;
+  overflow: none;
+}
+section.contact form label{
+  font-weight: lighter;
+}
+section.contact form input[type=number]::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+section.contact form textarea{
+  resize: none;
+  height: 190px;
+}
+section.contact form input[type=submit]{
+  background: #000;
+  color: #FFF;
+  border-color: #000;
+  font-weight: bold;
+  padding: 14px 0;
+  transition: all 0.4s;
+  margin-bottom: 30px !important;
+}
+section.contact form input[type=submit]:hover{
+  background: rgba(0, 0, 0, 0.85)
+}
+section.contact iframe{
+  height: 400px;
+  width: 100%;
+}
+
+/*==================================
+~ ~ ~ ~ ~ ~ Footer Styling ~ ~ ~ ~ ~
+====================================*/
+footer{
+  padding: 50px 0;
+  background: #000;
+  color: #FFF;
+}
+footer span{
+  font-size: 1rem;
+}
+footer span a:hover{
+  text-decoration: none;
+  color: #CCC;
+}
+footer .social{
+  text-align: center;
+  margin-top: 5px;
+}
+footer .social a{
+  font-size: 1.6rem;
+  text-decoration: none !important;
+  color: #FFF;
+  margin: 0 5px;
+  animation: MoveUpDown 1.2s linear infinite;
+  position: relative;
+  transition: color .3s;
+}
+footer .social a:hover{
+  color: rgba(255, 255, 255, 0.7)
+}
+.form-check-input {
+  width: auto !important;
+  margin: auto 0 !important;
+}
+.form-check {
+  display: flex !important;
+}
+.form-check-label {
+  margin: auto 3%;
+}
